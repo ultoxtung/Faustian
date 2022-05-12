@@ -34,17 +34,17 @@ def faustian(sourcefile):
     synth.loadTools(tools)
     synth.renderRun()
 
-    # processes = [mp.Process(target=worker, args=(obj, sourcefile)) for obj in tools]
-    # for p in processes:
-    #     p.start()
-    # for p in processes:
-    #     p.join()
+    processes = [mp.Process(target=worker, args=(obj, sourcefile)) for obj in tools]
+    for p in processes:
+        p.start()
+    for p in processes:
+        p.join()
 
-    # resultList  = [output.get() for p in processes]
+    resultList  = [output.get() for p in processes]
 
-    resultList = []
-    for tool in tools:
-        resultList.append(tool.run(sourcefile))
+    # resultList = []
+    # for tool in tools:
+    #     resultList.append(tool.run(sourcefile))
 
     synth.renderResult(resultList)
 
