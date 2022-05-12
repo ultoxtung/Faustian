@@ -1,0 +1,11 @@
+name: 'Osiris'
+image: 'christoftorres/osiris'
+command: 'python osiris/osiris.py -s'
+type: boolean-flag
+flag:
+  'arithmetic bugs': 3
+  'parity multisig bug 2': 2
+  'callstack bug': 5
+  'concurrency bug': 7
+  'time dependency bug': 8
+  'reentrancy bug': 1

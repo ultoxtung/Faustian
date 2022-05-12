@@ -1,0 +1,36 @@
+name: 'Mythril'
+image: 'mythril/myth'
+command: 'analyze'
+type: flag
+flag:
+  'SWC ID: 100': 2
+  'SWC ID: 101': 3
+  'SWC ID: 102': 10
+  'SWC ID: 103': 10
+  'SWC ID: 104': 4
+  'SWC ID: 105': 2
+  'SWC ID: 106': 2
+  'SWC ID: 107': 1
+  'SWC ID: 108': 2
+  'SWC ID: 109': 10
+  'SWC ID: 110': 10
+  'SWC ID: 111': 10
+  'SWC ID: 112': 2
+  'SWC ID: 113': 5
+  'SWC ID: 114': 7
+  'SWC ID: 115': 2
+  'SWC ID: 116': 8
+  'SWC ID: 117': 2
+  'SWC ID: 118': 10
+  'SWC ID: 119': 10
+  'SWC ID: 120': 6
+  'SWC ID: 121': 10
+  'SWC ID: 122': 2
+  'SWC ID: 123': 10
+  'SWC ID: 124': 10
+  'SWC ID: 125': 10
+  'SWC ID: 127': 10
+  'SWC ID: 128': 5
+  'SWC ID: 129': 10
+  'SWC ID: 132': 10
+  'SWC ID: 135': 10

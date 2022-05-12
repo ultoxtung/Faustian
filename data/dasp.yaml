@@ -1,0 +1,21 @@
+error:
+  1:
+    name: Reentrancy
+  2:
+    name: Access Control
+  3:
+    name: Arithmetic Issues
+  4:
+    name: Unchecked Return Values For Low Level Calls
+  5:
+    name: Denial of Service
+  6:
+    name: Bad Randomness
+  7:
+    name: Front-Running
+  8:
+    name: Time manipulation
+  9:
+    name: Short Address Attack
+  10:
+    name: Unknown Unknowns

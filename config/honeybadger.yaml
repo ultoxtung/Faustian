@@ -1,0 +1,14 @@
+name: 'HoneyBadger'
+image: 'christoftorres/honeybadger'
+command: 'python honeybadger/honeybadger.py -s'
+type: boolean-flag
+flag:
+  'money flow': 10
+  'balance disorder': 10
+  'hidden transfer': 10
+  'inheritance disorder': 10
+  'uninitialised struct': 7
+  'type overflow': 3
+  'skip empty string': 10
+  'hidden state update': 10
+  'straw man contract': 1

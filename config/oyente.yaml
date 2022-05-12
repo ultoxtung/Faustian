@@ -1,0 +1,12 @@
+name: 'Oyente'
+image: 'luongnguyen/oyente'
+command: 'python oyente/oyente.py -s'
+type: boolean-flag
+flag:
+  'integer underflow': 3
+  'integer overflow': 3
+  'parity multisig bug 2': 2
+  'callstack depth attack vulnerability': 5
+  'transaction-ordering dependence (tod)': 7
+  'timestamp dependency': 8
+  're-entrancy vulnerability': 1
