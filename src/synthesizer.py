@@ -1,6 +1,6 @@
-from src.dasp import DASP
-from src.tool import Tool
 import os
+
+from src.dasp import DASP
 
 
 CODE_COUNT = 10

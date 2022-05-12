@@ -1,8 +1,8 @@
 import docker
-import src.helper as helper
 import os
-import time
 import requests
+
+import src.helper as helper
 
 
 DEFAULT_TIMEOUT = 10

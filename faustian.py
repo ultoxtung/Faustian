@@ -1,10 +1,11 @@
+import argparse
 import multiprocessing as mp
-import sys
 
 from datetime import datetime
+from os import walk, mkdir
+
 from src.tool import Tool
 from src.synthesizer import Synthesizer
-from os import walk, mkdir
 
 
 output = mp.Queue()
@@ -21,7 +22,14 @@ def faustian(sourcefile):
     logPath = './logs/{}_{}'.format(datetime.now().strftime('%y%m%d%H%M%S'), sourcefile.rsplit('/', 1)[1])
     mkdir(logPath)
 
-    tools = [Tool(filename, logPath) for filename in configfiles]
+    tools = []
+    for filename in configfiles:
+        try:
+            tool = Tool(filename, logPath)
+        except:
+            pass
+        else:
+            tools.append(tool)
 
     synth.loadTools(tools)
     synth.renderRun()
@@ -42,4 +50,8 @@ def faustian(sourcefile):
 
 
 if __name__ == '__main__':
-    faustian(sys.argv[1])
+    parser = argparse.ArgumentParser()
+    parser.add_argument('path', metavar='PATH', type=str, help='path to the solidity code')
+    
+    args = parser.parse_args()
+    faustian(args.path)
